@@ -10,6 +10,9 @@ public class WorldOffset : MonoBehaviour
     [Tooltip("The 'WORLD OFFSET' object that corresponds to this one")]
     public Transform MatchingPoint;
 
+    public bool ForcePos;
+    public float newY;
+
     [Header("SHADOW WORLD ONLY")]
     [Tooltip("Check this box if the this object is in the shadow world'")]
     public bool ShadowWorld;
@@ -32,6 +35,11 @@ public class WorldOffset : MonoBehaviour
         // Sets the two offsets to the difference in the matching positions transform and this
         _offsetY = MatchingPoint.position.y - transform.position.y;
         _offsetX = transform.position.x - MatchingPoint.position.x;
+
+        if(ForcePos)
+        {
+            _offsetY = newY;
+        }
 
         // Get the singleton object
         _controller = PerceptionController.Instance;
@@ -62,6 +70,7 @@ public class WorldOffset : MonoBehaviour
     {
         if (collision.tag == PlayerTag && _isActive)
         {
+            Debug.Log(transform.position);
             _controller.SetPlayerOffset(_offsetX, _offsetY);
         }
     }
