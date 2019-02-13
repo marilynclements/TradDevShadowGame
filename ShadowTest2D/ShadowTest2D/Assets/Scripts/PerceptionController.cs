@@ -7,8 +7,11 @@ public class PerceptionChangeEvent : UnityEvent<bool> { }
 
 public class PerceptionController : MonoBehaviour
 {
+
+
     [Header("WORLD ROTATION CONTROL")]
     [Tooltip("The origin that the world will rotate around")]
+    [SerializeField]
     public Transform WorldOrigin;
     [Tooltip("The real world player object")]
     public GameObject Player;
@@ -106,9 +109,9 @@ public class PerceptionController : MonoBehaviour
         // SLERP and LERP until the position and the rotation are correct
         while(WorldOrigin.position != targetPosition && WorldOrigin.rotation != targetRotation)
         {
-            WorldOrigin.position = Vector3.Lerp(WorldOrigin.position, targetPosition, RotationTiming);
-            WorldOrigin.rotation = Quaternion.Slerp(WorldOrigin.rotation, targetRotation, RotationTiming);
-            yield return new WaitForSeconds(.1f);
+            WorldOrigin.position = Vector3.Lerp(WorldOrigin.position, targetPosition, Time.deltaTime * RotationTiming);
+            WorldOrigin.rotation = Quaternion.Slerp(WorldOrigin.rotation, targetRotation, Time.deltaTime *RotationTiming);
+            yield return null;
         }
 
         // Make sure WorldOrigin is correct
@@ -167,7 +170,7 @@ public class PerceptionController : MonoBehaviour
                 _position.x += _playerOffsetX;
                 if (_playerOffsetY != 0)
                 {
-                    _position.y += _playerOffsetY += ShadowWorldHeightOffset;
+                    _position.y += _playerOffsetY += ShadowWorldHeightOffset + 1.3f;
                 }
 
                 // Asign position to player
@@ -185,7 +188,7 @@ public class PerceptionController : MonoBehaviour
                 _position.x += _playerOffsetX;
                 if(_playerOffsetY != 0)
                 {
-                    _position.y += _playerOffsetY -= ShadowWorldHeightOffset;
+                    _position.y += _playerOffsetY -= ShadowWorldHeightOffset + 1.3f;
                 }
 
                 // asign position to player
