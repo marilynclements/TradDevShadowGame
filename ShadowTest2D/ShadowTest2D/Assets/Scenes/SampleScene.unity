@@ -1215,7 +1215,7 @@ MonoBehaviour:
   Player: {fileID: 1609817247}
   ShadowPlayer: {fileID: 2145166740}
   ShadowWorldHeightOffset: -3.8
-  RotationTiming: 7
+  RotationTiming: 3
 --- !u!4 &1097284766
 Transform:
   m_ObjectHideFlags: 0

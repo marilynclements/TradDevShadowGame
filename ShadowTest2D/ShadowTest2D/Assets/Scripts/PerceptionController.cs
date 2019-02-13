@@ -139,6 +139,7 @@ public class PerceptionController : MonoBehaviour
 
                 // Disable ShadowPlayer Control
                 ShadowPlayer.GetComponent<PlatformerPlayerController>().enabled = false;
+                ShadowPlayer.GetComponent<SpriteRenderer>().enabled = false;
 
                 // Rotate the world
                 StartCoroutine(RotateWorld());
@@ -153,6 +154,7 @@ public class PerceptionController : MonoBehaviour
                 _position = Player.transform.position;
                 // Disable Player control
                 Player.GetComponent<PlatformerPlayerController>().enabled = false;
+                Player.GetComponent<SpriteRenderer>().enabled = false;
 
                 // Rotate the World
                 StartCoroutine(RotateWorld());
@@ -176,6 +178,7 @@ public class PerceptionController : MonoBehaviour
                 // Asign position to player
                 Player.transform.position = _position;
                 // Set the Player's physics on
+                Player.GetComponent<SpriteRenderer>().enabled = true;
                 Player.GetComponent<PlatformerPlayerController>().enabled = true;
 
                 // Set booleans and activate real world objects
@@ -194,6 +197,7 @@ public class PerceptionController : MonoBehaviour
                 // asign position to player
                 ShadowPlayer.transform.position = _position;
                 // Enable player control
+                ShadowPlayer.GetComponent<SpriteRenderer>().enabled = true;
                 ShadowPlayer.GetComponent<PlatformerPlayerController>().enabled = true;
 
                 // Set booleans and activate shadow world objects
