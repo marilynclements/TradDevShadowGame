@@ -78,7 +78,7 @@ public class PerceptionController : MonoBehaviour
         _playerOffsetX = 0;
         _playerOffsetY = 0;
         _doneChanging = false;
-        ShadowPlayer.GetComponent<SpriteRenderer>().enabled = false;
+        //ShadowPlayer.GetComponent<SpriteRenderer>().enabled = false;
     }
 
     // Set the Player Offset for when the world changes

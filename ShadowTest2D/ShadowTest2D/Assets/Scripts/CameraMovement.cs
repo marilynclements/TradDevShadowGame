@@ -35,8 +35,8 @@ public class CameraMovement : MonoBehaviour
     void Start()
     {
         followTransform = Player;
-        PerceptionController.Instance.ChangeToShadowEvent.AddListener(ChangeShadowTarget);
-        PerceptionController.Instance.ChangeToRealEvent.AddListener(ChangePlayerTarget);
+        //PerceptionController.Instance.ChangeToShadowEvent.AddListener(ChangeShadowTarget);
+       // PerceptionController.Instance.ChangeToRealEvent.AddListener(ChangePlayerTarget);
         _zOffset.z = this.transform.position.z - followTransform.position.z;
 
         if (startDelay != 0f)
