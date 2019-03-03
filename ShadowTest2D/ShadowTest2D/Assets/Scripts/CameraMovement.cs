@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+
     public Transform Player;
     public Transform Shadow;
     public bool useFixedUpdate;
@@ -27,6 +28,9 @@ public class CameraMovement : MonoBehaviour
 
     private Vector3 _lookOffset;
     public float Buffer;
+
+    [Space(12)]
+    public float YOffset;
 
 
     private Transform followTransform;
@@ -88,6 +92,7 @@ public class CameraMovement : MonoBehaviour
         }
 
         _target += _zOffset;
+        _target.y += YOffset;
 
         if (!useFixedUpdate && _canFollow)
         {

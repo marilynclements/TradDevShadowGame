@@ -8,6 +8,9 @@ public class Decal_Script : MonoBehaviour
 {
     public GameObject ThisDecal;
 
+    private GameObject obj;
+    Decal decal;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,17 +22,23 @@ public class Decal_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(decal && !decal.enabled)
+        {
+            decal.enabled = true;
+            CreatePrefab();
+        }
     }
 
     void CreatePrefab()
     {
         // instantiate decal
-
-        GameObject obj = Instantiate(ThisDecal, ThisDecal.transform.position, ThisDecal.transform.rotation, this.transform);
+        if (obj == null)
+        {
+            obj = Instantiate(ThisDecal, ThisDecal.transform.position, ThisDecal.transform.rotation, this.transform);
+        }
 
         //decal implementation!!
-        var decal = obj.GetComponent<Decal>();
+        decal = obj.GetComponent<Decal>();
         if (decal) //if this obj has decal script
         {
             var filter = decal.GetComponent<MeshFilter>();
