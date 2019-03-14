@@ -40,6 +40,8 @@ public class PerceptionController : MonoBehaviour
 
     // The new position that the player will exist at
     private Vector3 _position;
+    private float _xpos;
+    private float _ypos;
     
     // Offsets for object traversal
     private float _playerOffsetX;
@@ -142,6 +144,8 @@ public class PerceptionController : MonoBehaviour
             {
                 // Get ShadowPlayer's position before it is rotated
                 _position = ShadowPlayer.transform.position;
+                _xpos = ShadowPlayer.transform.position.x;
+                _ypos = ShadowPlayer.transform.position.y;
                 ChangeToShadowEvent.Invoke(false);
 
                 // Disable ShadowPlayer Control
@@ -160,6 +164,8 @@ public class PerceptionController : MonoBehaviour
 
                 // Get Player position before it is rotated
                 _position = Player.transform.position;
+                _xpos = Player.transform.position.x;
+                _ypos = Player.transform.position.y;
                 // Disable Player control
                 Player.GetComponent<PlatformerPlayerController>().enabled = false;
                 Player.GetComponent<SpriteRenderer>().enabled = false;
@@ -182,7 +188,7 @@ public class PerceptionController : MonoBehaviour
 
 
                 // Asign position to player
-                Player.transform.position = _position;
+                Player.transform.position = new Vector3(_xpos, _ypos, Player.transform.position.z);
                 // Set the Player's physics on
                 Player.GetComponent<SpriteRenderer>().enabled = true;
                 Player.GetComponent<PlatformerPlayerController>().enabled = true;
@@ -194,10 +200,10 @@ public class PerceptionController : MonoBehaviour
             else
             {
                 // add offset to the player
-                _position.x += _playerOffsetX;
+                //_position.x += _playerOffsetX;
                 
                 // asign position to player
-                ShadowPlayer.transform.position = _position;
+                ShadowPlayer.transform.position = new Vector3(_xpos, _ypos, ShadowPlayer.transform.position.z);
                 // Enable player control
 
 
