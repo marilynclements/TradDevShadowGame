@@ -39,7 +39,6 @@ public class PerceptionController : MonoBehaviour
     private bool _doneChanging;
 
     // The new position that the player will exist at
-    private Vector3 _position;
     private float _xpos;
     private float _ypos;
     
@@ -143,7 +142,6 @@ public class PerceptionController : MonoBehaviour
             if(_shadowPerspective)
             {
                 // Get ShadowPlayer's position before it is rotated
-                _position = ShadowPlayer.transform.position;
                 _xpos = ShadowPlayer.transform.position.x;
                 _ypos = ShadowPlayer.transform.position.y;
                 ChangeToShadowEvent.Invoke(false);
@@ -151,6 +149,7 @@ public class PerceptionController : MonoBehaviour
                 // Disable ShadowPlayer Control
                 ShadowPlayer.GetComponent<PlatformerPlayerController>().enabled = false;
                 ShadowPlayer.GetComponent<BoxCollider2D>().enabled = false;
+                ShadowPlayer.GetComponent<Decal_Script>().SetStatus(false);
                 //ShadowPlayer.GetComponent<SpriteRenderer>().enabled = false;
 
                 // Rotate the world
@@ -162,8 +161,7 @@ public class PerceptionController : MonoBehaviour
                 // Disable real world Objects
                 ChangeToRealEvent.Invoke(false);
 
-                // Get Player position before it is rotated
-                _position = Player.transform.position;
+
                 _xpos = Player.transform.position.x;
                 _ypos = Player.transform.position.y;
                 // Disable Player control
@@ -183,8 +181,8 @@ public class PerceptionController : MonoBehaviour
             if (_shadowPerspective)
             {
                 // Add Offset to the player
-                _position.x += _playerOffsetX;
-                //_position.y += _playerOffsetY;
+                _xpos -= _playerOffsetX;
+                _ypos -= _playerOffsetY;
 
 
                 // Asign position to player
@@ -200,20 +198,16 @@ public class PerceptionController : MonoBehaviour
             else
             {
                 // add offset to the player
-                //_position.x += _playerOffsetX;
-                
+                _xpos -= _playerOffsetX;
+                _ypos -= _playerOffsetY;
+
                 // asign position to player
                 ShadowPlayer.transform.position = new Vector3(_xpos, _ypos, ShadowPlayer.transform.position.z);
                 // Enable player control
 
-
-
-                //TO DO -> Disable ShadowPlayer Decal
-
-
-                //ShadowPlayer.GetComponent<SpriteRenderer>().enabled = true;
                 ShadowPlayer.GetComponent<BoxCollider2D>().enabled = true;
                 ShadowPlayer.GetComponent<PlatformerPlayerController>().enabled = true;
+                ShadowPlayer.GetComponent<Decal_Script>().SetStatus(true);
 
                 // Set booleans and activate shadow world objects
                 _shadowPerspective = true;
