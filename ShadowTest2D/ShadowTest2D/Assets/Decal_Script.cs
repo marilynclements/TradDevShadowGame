@@ -11,24 +11,10 @@ public class Decal_Script : MonoBehaviour
     private GameObject obj;
     Decal decal;
 
-    private bool _inShadow;
-    
-    public void SetStatus(bool status)
-    {
-        _inShadow = status;
-        if(_inShadow)
-        {
-            CreatePrefab();
-        }
-    }
-
     // Start is called before the first frame update
     void Start()
     {
-        if (tag == "Player")
-        {
-            return;
-        }
+
         CreatePrefab();
 
     }
@@ -36,14 +22,10 @@ public class Decal_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_inShadow && decal && !decal.enabled)
+        if(decal && !decal.enabled)
         {
             decal.enabled = true;
             CreatePrefab();
-        }
-        else
-        {
-            Destroy(obj);
         }
     }
 
