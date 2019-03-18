@@ -36,6 +36,10 @@ public class Decal_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(tag != "Player")
+        {
+            return;
+        }
         if(_inShadow && decal && !decal.enabled)
         {
             decal.enabled = true;
