@@ -10,8 +10,6 @@ public class WorldOffset : MonoBehaviour
     [Tooltip("The 'WORLD OFFSET' object that corresponds to this one")]
     public Transform MatchingPoint;
 
-    public bool ForcePos;
-    public float newY;
 
     [Header("SHADOW WORLD ONLY")]
     [Tooltip("Check this box if the this object is in the shadow world'")]
@@ -23,23 +21,26 @@ public class WorldOffset : MonoBehaviour
     // The offsets for the difference in shadow and real
     private float _offsetX;
     private float _offsetY;
+    private Vector2 _matchPoint;
 
     // Determines if collisions should do anything
     private bool _isActive;
+
+    private bool _hasFlipped;
 
 
     // SETS UP ALL THE VARIABLES
     private void Start()
     {
-
+        if(ShadowWorld)
+        {
+            _matchPoint.x = MatchingPoint.position.x;
+            _matchPoint.y = MatchingPoint.position.y;
+        }
         // Sets the two offsets to the difference in the matching positions transform and this
         _offsetY = MatchingPoint.position.y - transform.position.y;
         _offsetX = transform.position.x - MatchingPoint.position.x;
 
-        if(ForcePos)
-        {
-            _offsetY = newY;
-        }
 
         // Get the singleton object
         _controller = PerceptionController.Instance;
@@ -57,11 +58,23 @@ public class WorldOffset : MonoBehaviour
             _isActive = true;
             _controller.ChangeToRealEvent.AddListener(SetColliderStatus);
         }
+
+        _hasFlipped = false;
     }
 
     // For the subscription to events and controlling the activation of this object
     public void SetColliderStatus(bool status)
     {
+        if(ShadowWorld && !_hasFlipped && status)
+        {
+            _hasFlipped = true;
+            _offsetX = transform.position.x - _matchPoint.x;
+            _offsetY = transform.position.y - _matchPoint.y;
+
+            var offset = MatchingPoint.GetComponent<WorldOffset>();
+            offset._offsetX = -_offsetX;
+            offset._offsetY = -_offsetY;
+        }
         _isActive = status;
     }
 

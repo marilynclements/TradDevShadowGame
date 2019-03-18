@@ -10,17 +10,22 @@ public class PerceptionController : MonoBehaviour
 
 
     [Header("WORLD ROTATION CONTROL")]
-    [Tooltip("The origin that the world will rotate around")]
+    [Tooltip("The world that will rotate (Should contain real and shadow")]
     [SerializeField]
     public Transform WorldOrigin;
+    [Tooltip("This controls the speed of world rotation")]
+    public float RotationTiming;
+    [Tooltip("This is the height difference of the ShadowWorld and RealWorld")]
+    public float ShadowWorldHeightOffset;
+
+    [Space(5)]
+
+    [Header("PLAYER'S")]
     [Tooltip("The real world player object")]
     public GameObject Player;
     [Tooltip("The shadow world player object")]
     public GameObject ShadowPlayer;
-    [Tooltip("The offset of the shadow world's height from the real worlds")]
-    public float ShadowWorldHeightOffset = -3.8f;
-    [Tooltip("This controls the speed of world rotation")]
-    public float RotationTiming;
+
 
     [Header("EVENTS")]
     [Tooltip("Passes False when Shadow World exited and True when Shadow World started")]
@@ -34,7 +39,8 @@ public class PerceptionController : MonoBehaviour
     private bool _doneChanging;
 
     // The new position that the player will exist at
-    private Vector3 _position;
+    private float _xpos;
+    private float _ypos;
     
     // Offsets for object traversal
     private float _playerOffsetX;
@@ -58,6 +64,7 @@ public class PerceptionController : MonoBehaviour
 
         // Disable the shadow player at the beginning
         ShadowPlayer.GetComponent<PlatformerPlayerController>().enabled = false;
+        ShadowPlayer.GetComponent<BoxCollider2D>().enabled = false;
 
         // Set up events if they don't exist yet
         if(ChangeToShadowEvent == null)
@@ -108,7 +115,7 @@ public class PerceptionController : MonoBehaviour
         }
 
         // SLERP and LERP until the position and the rotation are correct
-        while(WorldOrigin.position != targetPosition && WorldOrigin.rotation != targetRotation)
+        while(/*WorldOrigin.position != targetPosition &&*/ WorldOrigin.rotation != targetRotation)
         {
             WorldOrigin.position = Vector3.Lerp(WorldOrigin.position, targetPosition, Time.deltaTime * RotationTiming);
             WorldOrigin.rotation = Quaternion.Slerp(WorldOrigin.rotation, targetRotation, Time.deltaTime *RotationTiming);
@@ -116,7 +123,7 @@ public class PerceptionController : MonoBehaviour
         }
 
         // Make sure WorldOrigin is correct
-        WorldOrigin.position = targetPosition;
+        //WorldOrigin.position = targetPosition;
         WorldOrigin.rotation = targetRotation;
 
         // Inform update that the rotation is complete
@@ -135,12 +142,15 @@ public class PerceptionController : MonoBehaviour
             if(_shadowPerspective)
             {
                 // Get ShadowPlayer's position before it is rotated
-                _position = ShadowPlayer.transform.position;
+                _xpos = ShadowPlayer.transform.position.x;
+                _ypos = ShadowPlayer.transform.position.y;
                 ChangeToShadowEvent.Invoke(false);
 
                 // Disable ShadowPlayer Control
                 ShadowPlayer.GetComponent<PlatformerPlayerController>().enabled = false;
-                ShadowPlayer.GetComponent<SpriteRenderer>().enabled = false;
+                ShadowPlayer.GetComponent<BoxCollider2D>().enabled = false;
+                ShadowPlayer.GetComponent<Decal_Script>().SetStatus(false);
+                //ShadowPlayer.GetComponent<SpriteRenderer>().enabled = false;
 
                 // Rotate the world
                 StartCoroutine(RotateWorld());
@@ -151,8 +161,9 @@ public class PerceptionController : MonoBehaviour
                 // Disable real world Objects
                 ChangeToRealEvent.Invoke(false);
 
-                // Get Player position before it is rotated
-                _position = Player.transform.position;
+
+                _xpos = Player.transform.position.x;
+                _ypos = Player.transform.position.y;
                 // Disable Player control
                 Player.GetComponent<PlatformerPlayerController>().enabled = false;
                 Player.GetComponent<SpriteRenderer>().enabled = false;
@@ -170,14 +181,12 @@ public class PerceptionController : MonoBehaviour
             if (_shadowPerspective)
             {
                 // Add Offset to the player
-                _position.x += _playerOffsetX;
-                if (_playerOffsetY != 0)
-                {
-                    _position.y += _playerOffsetY += ShadowWorldHeightOffset + 1.3f;
-                }
+                _xpos -= _playerOffsetX;
+                _ypos -= _playerOffsetY;
+
 
                 // Asign position to player
-                Player.transform.position = _position;
+                Player.transform.position = new Vector3(_xpos, _ypos, Player.transform.position.z);
                 // Set the Player's physics on
                 Player.GetComponent<SpriteRenderer>().enabled = true;
                 Player.GetComponent<PlatformerPlayerController>().enabled = true;
@@ -189,17 +198,16 @@ public class PerceptionController : MonoBehaviour
             else
             {
                 // add offset to the player
-                _position.x += _playerOffsetX;
-                if(_playerOffsetY != 0)
-                {
-                    _position.y += _playerOffsetY -= ShadowWorldHeightOffset + 1.3f;
-                }
+                _xpos -= _playerOffsetX;
+                _ypos -= _playerOffsetY;
 
                 // asign position to player
-                ShadowPlayer.transform.position = _position;
+                ShadowPlayer.transform.position = new Vector3(_xpos, _ypos, ShadowPlayer.transform.position.z);
                 // Enable player control
-                ShadowPlayer.GetComponent<SpriteRenderer>().enabled = true;
+
+                ShadowPlayer.GetComponent<BoxCollider2D>().enabled = true;
                 ShadowPlayer.GetComponent<PlatformerPlayerController>().enabled = true;
+                ShadowPlayer.GetComponent<Decal_Script>().SetStatus(true);
 
                 // Set booleans and activate shadow world objects
                 _shadowPerspective = true;
