@@ -11,6 +11,7 @@ using UnityEngine;
 /// </summary>
 public class PlatformerPlayerController : PhysicsObject
 {
+    private Animator _animator;
 
     public bool IsGrounded()
     {
@@ -23,7 +24,7 @@ public class PlatformerPlayerController : PhysicsObject
     // Start is called before the first frame update
     void Start()
     {
-        
+        _animator = GetComponent<Animator>();
     }
 
     protected override void ComputeVelocity()
