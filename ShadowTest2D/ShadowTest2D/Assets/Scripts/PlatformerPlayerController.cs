@@ -12,6 +12,9 @@ using UnityEngine;
 public class PlatformerPlayerController : PhysicsObject
 {
     private Animator _animator;
+    private int animationHash = Animator.StringToHash("Moth_move");
+    private bool _facingRight = true;
+    private bool _test;
 
     public bool IsGrounded()
     {
@@ -25,6 +28,7 @@ public class PlatformerPlayerController : PhysicsObject
     void Start()
     {
         _animator = GetComponent<Animator>();
+        _test = _animator == null;
     }
 
     protected override void ComputeVelocity()
@@ -32,8 +36,33 @@ public class PlatformerPlayerController : PhysicsObject
         Vector2 move = Vector2.zero;
 
         move.x = Input.GetAxis("Horizontal");
+        if (!_test)
+        {
+            if (move.x > 0)
+            {
+                if (!_facingRight)
+                {
+                    Vector3 scale = transform.lossyScale;
+                    scale.x *= -1;
+                    transform.localScale = scale;
+                }
+                _facingRight = true;
+            }
+            else if(move.x < 0)
+            {
+                if (_facingRight)
+                {
+                    Vector3 scale = transform.lossyScale;
+                    scale.x *= -1;
+                    transform.localScale = scale;
+                }
+                _facingRight = false;
+            }
 
-        if(Input.GetButtonDown("Jump") && grounded)
+            _animator.enabled = (move.x != 0);
+        }
+
+        if (Input.GetButtonDown("Jump") && grounded)
         {
             velocity.y = JumpTakeOffSpeed;
         }
