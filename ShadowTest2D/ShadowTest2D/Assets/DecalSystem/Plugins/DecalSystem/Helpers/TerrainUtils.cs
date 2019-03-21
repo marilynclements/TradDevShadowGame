@@ -1,5 +1,4 @@
-﻿#if UNITY_EDITOR
-namespace DecalSystem {
+﻿namespace DecalSystem {
     using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
@@ -73,4 +72,3 @@ namespace DecalSystem {
 
     }
 }
-#endif
