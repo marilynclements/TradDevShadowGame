@@ -17,6 +17,7 @@ public class PerceptionController : MonoBehaviour
     public float RotationTiming;
     [Tooltip("This is the height difference of the ShadowWorld and RealWorld")]
     public float ShadowWorldHeightOffset;
+    public AnimationCurve AnimCurve;
 
     [Space(5)]
 
@@ -37,6 +38,7 @@ public class PerceptionController : MonoBehaviour
     private bool _shadowPerspective;
     private bool _canChange;
     private bool _doneChanging;
+    private bool _isChanging;
 
     // The new position that the player will exist at
     private float _xpos;
@@ -85,6 +87,7 @@ public class PerceptionController : MonoBehaviour
         _playerOffsetX = 0;
         _playerOffsetY = 0;
         _doneChanging = false;
+        _isChanging = false;
         //ShadowPlayer.GetComponent<SpriteRenderer>().enabled = false;
     }
 
@@ -118,7 +121,7 @@ public class PerceptionController : MonoBehaviour
         while(/*WorldOrigin.position != targetPosition &&*/ WorldOrigin.rotation != targetRotation)
         {
             WorldOrigin.position = Vector3.Lerp(WorldOrigin.position, targetPosition, Time.deltaTime * RotationTiming);
-            WorldOrigin.rotation = Quaternion.Slerp(WorldOrigin.rotation, targetRotation, Time.deltaTime *RotationTiming);
+            WorldOrigin.rotation = Quaternion.Lerp(WorldOrigin.rotation, targetRotation, AnimCurve.Evaluate(Time.deltaTime * RotationTiming));//Time.deltaTime *RotationTiming);
             yield return null;
         }
 
@@ -133,8 +136,9 @@ public class PerceptionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_canChange && Input.GetKeyDown(KeyCode.Tab))
+        if (_canChange && !_isChanging && Input.GetKeyDown(KeyCode.Tab))
         {
+            _isChanging = true;
             // Disable shadow world objects
             ChangeToShadowEvent.Invoke(_shadowPerspective);
 
@@ -216,6 +220,7 @@ public class PerceptionController : MonoBehaviour
 
             // Prevent Update from continuously changin
             _doneChanging = false;
+            _isChanging = false;
         }
 
         // This makes the player only able to change perspectives if their character is grounded
