@@ -93,16 +93,18 @@ namespace DecalSystem {
             transform.hasChanged = hasChanged;
         }
 
+        
         private static void FixRatio(ref Vector3 scale, ref Vector3 oldScale, float ratio) {
-            if (!Mathf.Approximately( oldScale.x, scale.x )) scale.y = scale.x / ratio; // if scale.x was changed then fix scale.y
+            
+           if (!Mathf.Approximately( oldScale.x, scale.x )) scale.y = scale.x / ratio; // if scale.x was changed then fix scale.y
             else
             if (!Mathf.Approximately( oldScale.y, scale.y )) scale.x = scale.y * ratio;
             else
             if (!Mathf.Approximately( scale.x / scale.y, ratio )) scale.x = scale.y * ratio;
-
+            
             oldScale = scale;
+            
         }
-
 
         // Helpers
         private static bool HasLayer(LayerMask mask, int layer) {

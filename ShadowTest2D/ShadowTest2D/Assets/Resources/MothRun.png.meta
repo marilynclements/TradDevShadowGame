@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: c6d3949f0deaed644835cd0a1965261d
+guid: 81cf9b1cdde769f489556c6964d6ad8a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Moth Test2_0
-    21300002: Moth Test2_1
-    21300004: Moth Test2_1
-    21300006: Moth Test2_2
-    21300008: Moth Test2_3
-    21300010: Moth Test2_5
-    21300012: Moth Test2_4
-    21300014: Moth Test2_5
-    21300016: Moth Test2_6
-    21300018: Moth Test2_7
-    21300020: Moth Test2_8
-    21300022: Moth Test2_11
-    21300024: Moth Test2_9
+    21300000: MothRun0
+    21300002: MothRun1
+    21300004: MothRun1
+    21300006: MothRun2
+    21300008: MothRun3
+    21300010: MothRun5
+    21300012: MothRun4
+    21300014: MothRun5
+    21300016: MothRun6
+    21300018: MothRun7
+    21300020: MothRun8
+    21300022: MothRun11
+    21300024: MothRun9
     21300026: Moth Test2_11
     21300028: Moth Test2_14
     21300030: Moth Test2_15
@@ -24,6 +24,8 @@ TextureImporter:
     21300038: Moth Test2_19
     21300040: Moth Test2_20
     21300042: Moth Test2_10
+    21300044: MothRun10
+    21300046: MothTes11
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -128,7 +130,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Moth Test2_0
+      name: MothRun0
       rect:
         serializedVersion: 2
         x: 40
@@ -148,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_1
+      name: MothRun1
       rect:
         serializedVersion: 2
         x: 225
@@ -168,10 +170,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_2
+      name: MothRun2
       rect:
         serializedVersion: 2
-        x: 417
+        x: 420
         y: 18
         width: 101
         height: 154
@@ -188,7 +190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_3
+      name: MothRun3
       rect:
         serializedVersion: 2
         x: 575
@@ -208,7 +210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_4
+      name: MothRun4
       rect:
         serializedVersion: 2
         x: 727
@@ -228,7 +230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_5
+      name: MothRun5
       rect:
         serializedVersion: 2
         x: 891
@@ -248,7 +250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_6
+      name: MothRun6
       rect:
         serializedVersion: 2
         x: 1061
@@ -268,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_7
+      name: MothRun7
       rect:
         serializedVersion: 2
         x: 1241
@@ -288,7 +290,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_8
+      name: MothRun8
       rect:
         serializedVersion: 2
         x: 1427
@@ -308,7 +310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_9
+      name: MothRun9
       rect:
         serializedVersion: 2
         x: 1589
@@ -328,27 +330,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_11
-      rect:
-        serializedVersion: 2
-        x: 1914
-        y: 13
-        width: 119
-        height: 179
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55cc45a7ae1a13748af254497d8b2e83
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moth Test2_14
+      name: MothTes11
       rect:
         serializedVersion: 2
         x: 1899
@@ -368,7 +350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moth Test2_10
+      name: MothRun10
       rect:
         serializedVersion: 2
         x: 1726
@@ -376,7 +358,7 @@ TextureImporter:
         width: 124
         height: 178
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
