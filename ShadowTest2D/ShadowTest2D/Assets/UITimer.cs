@@ -23,6 +23,10 @@ public class UITimer : MonoBehaviour
         percent = PC.GetTime() / maxVal;
         Vector3 scale = transform.localScale;
         scale.y = percent;
+        if(scale.y < 0)
+        {
+            scale.y = 0;
+        }
         transform.localScale = Vector3.Lerp(transform.localScale, scale, animCurve.Evaluate(Time.deltaTime));
     }
 }
