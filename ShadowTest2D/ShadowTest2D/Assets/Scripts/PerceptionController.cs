@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -27,6 +28,12 @@ public class PerceptionController : MonoBehaviour
     [Tooltip("The shadow world player object")]
     public GameObject ShadowPlayer;
 
+    [Space(5)]
+    [Header("SHADOW WORLD CONTROL")]
+    public float MaxTime;
+    public float TickAmount;
+    public float TicksPerSecond;
+
 
     [Header("EVENTS")]
     [Tooltip("Passes False when Shadow World exited and True when Shadow World started")]
@@ -39,6 +46,7 @@ public class PerceptionController : MonoBehaviour
     private bool _canChange;
     private bool _doneChanging;
     private bool _isChanging;
+    private bool _outOfTime;
 
     // The new position that the player will exist at
     private float _xpos;
@@ -47,6 +55,11 @@ public class PerceptionController : MonoBehaviour
     // Offsets for object traversal
     private float _playerOffsetX;
     private float _playerOffsetY;
+
+    // Timer Stuff;
+    private float _currentTime;
+    private float _tickAmount;
+    private Coroutine _coroutine;
 
     // Makes the object a singleton
     private static PerceptionController _instance;
@@ -88,6 +101,10 @@ public class PerceptionController : MonoBehaviour
         _playerOffsetY = 0;
         _doneChanging = false;
         _isChanging = false;
+        _outOfTime = false;
+
+        _currentTime = MaxTime;
+        _tickAmount = 1 / TicksPerSecond;
         //ShadowPlayer.GetComponent<SpriteRenderer>().enabled = false;
     }
 
@@ -136,6 +153,24 @@ public class PerceptionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(_outOfTime && _shadowPerspective && _canChange)
+        {
+            _isChanging = true;
+            ChangeToShadowEvent.Invoke(_shadowPerspective);
+
+            StopAllCoroutines();
+
+            _xpos = ShadowPlayer.transform.position.x;
+            _ypos = ShadowPlayer.transform.position.y;
+            ChangeToShadowEvent.Invoke(false);
+
+            ShadowPlayer.GetComponent<PlatformerPlayerController>().enabled = false;
+            ShadowPlayer.GetComponent<BoxCollider2D>().enabled = false;
+            ShadowPlayer.GetComponent<Decal_Script>().SetStatus(false);
+
+            StartCoroutine(RotateWorld());
+        }
+
         if (_canChange && !_isChanging && Input.GetKeyDown(KeyCode.Tab))
         {
             _isChanging = true;
@@ -145,6 +180,8 @@ public class PerceptionController : MonoBehaviour
             // Currently in ShadowPerspective thus we must switch back to regular perspective;
             if(_shadowPerspective)
             {
+                StopCoroutine(_coroutine);
+
                 // Get ShadowPlayer's position before it is rotated
                 _xpos = ShadowPlayer.transform.position.x;
                 _ypos = ShadowPlayer.transform.position.y;
@@ -176,7 +213,6 @@ public class PerceptionController : MonoBehaviour
                 StartCoroutine(RotateWorld());
             }
         }
-
         // _doneChanging is switched to True at the end of Rotate World,
         //  so that all proper adjustments to characters in each world can take place
         if(_doneChanging)
@@ -213,6 +249,8 @@ public class PerceptionController : MonoBehaviour
                 ShadowPlayer.GetComponent<PlatformerPlayerController>().enabled = true;
                 ShadowPlayer.GetComponent<Decal_Script>().SetStatus(true);
 
+                _coroutine = StartCoroutine(TickTime());
+
                 // Set booleans and activate shadow world objects
                 _shadowPerspective = true;
                 ChangeToShadowEvent.Invoke(true);
@@ -231,6 +269,24 @@ public class PerceptionController : MonoBehaviour
         else
         {
             _canChange = Player.GetComponent<PlatformerPlayerController>().IsGrounded();
+        }
+    }
+
+    private IEnumerator TickTime()
+    {
+        Debug.Log("HERE");
+        while(!_outOfTime)
+        {
+            _currentTime -= TickAmount;
+            Debug.Log(_currentTime);
+            if (_currentTime <= 0f)
+            {
+                _outOfTime = true;
+            }
+            else
+            {
+                yield return new WaitForSeconds(_tickAmount);
+            }
         }
     }
 }

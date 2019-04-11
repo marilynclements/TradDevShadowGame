@@ -14,7 +14,7 @@ public class MothDecalAnimator : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(run());
+        //StartCoroutine(run());
     }
 
     private IEnumerator run()
