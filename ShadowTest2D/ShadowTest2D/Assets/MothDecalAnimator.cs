@@ -7,20 +7,49 @@ using UnityEngine;
 public class MothDecalAnimator : MonoBehaviour
 {
     public Decal ShadowPlayer;
-    public float FrameDelay;
+    public float FPS;
     public ShadowAnimation RunningAnimation;
 
     private int currentFrame = 0;
+    private float waitTime;
 
-    void Start()
+    private bool _animating;
+
+    private void Start()
     {
-        //StartCoroutine(run());
+        if(FPS == 0)
+        {
+            waitTime = .05f;
+        }
+        else
+        {
+            waitTime = 1 / FPS;
+        }
+
+        StartCoroutine("Run");
     }
 
-    private IEnumerator run()
+    public void PlayRun()
+    {
+        if(!_animating)
+        {
+            _animating = true;
+            currentFrame = 0;
+            StartCoroutine("Run");
+        }
+    }
+
+    public void StopRun()
+    {
+        StopCoroutine("Run");
+        _animating = false;
+    }
+
+    private IEnumerator Run()
     {
         while(true)
         {
+            ShadowPlayer.Sprite = RunningAnimation.AnimationFrames[currentFrame];
             if(currentFrame == RunningAnimation.AnimationFrames.Length -1)
             {
                 currentFrame = 0;
@@ -29,14 +58,12 @@ public class MothDecalAnimator : MonoBehaviour
             {
                 currentFrame++;
             }
-
-            ShadowPlayer.Sprite = RunningAnimation.AnimationFrames[currentFrame];
+            yield return new WaitForSeconds(waitTime);
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StopAll()
     {
-        
+        StopAllCoroutines();
     }
 }

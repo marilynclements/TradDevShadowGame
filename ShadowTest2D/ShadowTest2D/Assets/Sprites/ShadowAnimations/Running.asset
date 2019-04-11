@@ -12,4 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ce5c93cad551546a2ce26a8d759194, type: 3}
   m_Name: Running
   m_EditorClassIdentifier: 
-  AnimationFrames: []
+  AnimationFrames:
+  - {fileID: 21300000, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300002, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300006, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300008, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300012, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300010, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300016, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300018, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300020, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300024, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300042, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300022, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}
+  - {fileID: 21300028, guid: c6d3949f0deaed644835cd0a1965261d, type: 3}

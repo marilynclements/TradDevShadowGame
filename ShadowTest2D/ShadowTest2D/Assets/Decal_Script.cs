@@ -55,6 +55,14 @@ public class Decal_Script : MonoBehaviour
         {
             obj = Instantiate(ThisDecal, ThisDecal.transform.position, ThisDecal.transform.rotation, this.transform);
         }
+        else if(tag == "Player")
+        {
+            if(obj != null)
+            {
+                Destroy(obj);
+            }
+            obj = Instantiate(ThisDecal, ThisDecal.transform.position, ThisDecal.transform.rotation, this.transform);
+        }
 
         //decal implementation!!
         decal = obj.GetComponent<Decal>();
@@ -68,7 +76,6 @@ public class Decal_Script : MonoBehaviour
                 filter.mesh = mesh;
             }
             DecalBuilder.Build(decal);
-
         }
 
     }

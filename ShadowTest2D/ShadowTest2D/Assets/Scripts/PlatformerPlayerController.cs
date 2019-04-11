@@ -15,6 +15,7 @@ public class PlatformerPlayerController : PhysicsObject
     private int animationHash = Animator.StringToHash("Moth_move");
     private bool _facingRight = true;
     private bool _test;
+    private MothDecalAnimator _MDA;
 
     public bool IsGrounded()
     {
@@ -23,12 +24,17 @@ public class PlatformerPlayerController : PhysicsObject
 
     public float JumpTakeOffSpeed = 7f;
     public float MaxSpeed = 7f;
+    public bool IsShadow;
 
     // Start is called before the first frame update
     void Start()
     {
         _animator = GetComponent<Animator>();
         _test = _animator == null;
+        if(IsShadow)
+        {
+            _MDA = GetComponentInChildren<MothDecalAnimator>();
+        }
     }
 
     protected override void ComputeVelocity()
@@ -48,7 +54,7 @@ public class PlatformerPlayerController : PhysicsObject
                 }
                 _facingRight = true;
             }
-            else if(move.x < 0)
+            else if (move.x < 0)
             {
                 if (_facingRight)
                 {
@@ -62,18 +68,36 @@ public class PlatformerPlayerController : PhysicsObject
             _animator.enabled = (move.x != 0);
         }
 
+        else if (IsShadow)
+        {
+            if (move.x > 0)
+            {
+                _MDA.PlayRun();
+            }
+            else
+            {
+                _MDA.StopRun();
+            }
+        }
+
         if (Input.GetButtonDown("Jump") && grounded)
         {
             velocity.y = JumpTakeOffSpeed;
         }
-        else if(Input.GetButtonUp("Jump"))
+        else if (Input.GetButtonUp("Jump"))
         {
-            if(velocity.y > 0)
+            if (velocity.y > 0)
             {
                 velocity.y *= 0.5f;
             }
         }
 
         targetVelocity = move * MaxSpeed;
+    }
+
+    private void OnDisable()
+    {
+        _MDA.StopAll();
+        _MDA.enabled = false;
     }
 }
