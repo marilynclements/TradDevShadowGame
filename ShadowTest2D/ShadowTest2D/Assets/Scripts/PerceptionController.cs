@@ -171,7 +171,7 @@ public class PerceptionController : MonoBehaviour
             StartCoroutine(RotateWorld());
         }
 
-        if (_canChange && !_isChanging && Input.GetKeyDown(KeyCode.Tab))
+        if (_canChange && !_isChanging && !_outOfTime && Input.GetKeyDown(KeyCode.Tab))
         {
             _isChanging = true;
             // Disable shadow world objects
