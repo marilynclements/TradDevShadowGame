@@ -273,6 +273,11 @@ public class PerceptionController : MonoBehaviour
         }
     }
 
+    public float GetTime()
+    {
+        return _currentTime;
+    }
+
     private IEnumerator TickTime()
     {
         Debug.Log("HERE");

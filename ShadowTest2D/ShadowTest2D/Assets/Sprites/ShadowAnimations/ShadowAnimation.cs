@@ -5,5 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ShadowAnimation", menuName = "ShadowAnimation", order = 1)]
 public class ShadowAnimation : ScriptableObject
 {
+    public float FPS;
     public Sprite[] AnimationFrames;
 }

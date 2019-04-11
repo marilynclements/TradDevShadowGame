@@ -69,7 +69,11 @@ public class PlatformerPlayerController : PhysicsObject
         }
 
         else if (IsShadow)
-        {
+        { 
+            if(_MDA == null)
+            {
+                _MDA = GetComponentInChildren<MothDecalAnimator>();
+            }
             if (move.x > 0)
             {
                 _MDA.PlayRun();
@@ -97,7 +101,10 @@ public class PlatformerPlayerController : PhysicsObject
 
     private void OnDisable()
     {
-        _MDA.StopAll();
-        _MDA.enabled = false;
+        if(!IsShadow)
+        {
+            _MDA.StopAll();
+            _MDA.enabled = false;
+        }
     }
 }
