@@ -158,7 +158,8 @@ public class PerceptionController : MonoBehaviour
             _isChanging = true;
             ChangeToShadowEvent.Invoke(_shadowPerspective);
 
-            StopAllCoroutines();
+            //StopAllCoroutines();
+            StopCoroutine("TickTime");
 
             _xpos = ShadowPlayer.transform.position.x;
             _ypos = ShadowPlayer.transform.position.y;
@@ -180,7 +181,7 @@ public class PerceptionController : MonoBehaviour
             // Currently in ShadowPerspective thus we must switch back to regular perspective;
             if(_shadowPerspective)
             {
-                StopCoroutine(_coroutine);
+                StopCoroutine("TickTime");
 
                 // Get ShadowPlayer's position before it is rotated
                 _xpos = ShadowPlayer.transform.position.x;
@@ -249,7 +250,7 @@ public class PerceptionController : MonoBehaviour
                 ShadowPlayer.GetComponent<PlatformerPlayerController>().enabled = true;
                 ShadowPlayer.GetComponent<Decal_Script>().SetStatus(true);
 
-                _coroutine = StartCoroutine(TickTime());
+                StartCoroutine("TickTime");
 
                 // Set booleans and activate shadow world objects
                 _shadowPerspective = true;
