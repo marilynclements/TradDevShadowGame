@@ -101,7 +101,7 @@ public class PlatformerPlayerController : PhysicsObject
 
     private void OnDisable()
     {
-        if(!IsShadow)
+        if(IsShadow)
         {
             _MDA.StopAll();
             _MDA.enabled = false;
