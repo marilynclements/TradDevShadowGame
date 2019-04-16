@@ -209,6 +209,7 @@ public class PerceptionController : MonoBehaviour
                 // Disable Player control
                 Player.GetComponent<PlatformerPlayerController>().enabled = false;
                 Player.GetComponent<SpriteRenderer>().enabled = false;
+                Player.GetComponent<Animator>().enabled = false;
 
                 // Rotate the World
                 StartCoroutine(RotateWorld());
@@ -231,6 +232,7 @@ public class PerceptionController : MonoBehaviour
                 // Set the Player's physics on
                 Player.GetComponent<SpriteRenderer>().enabled = true;
                 Player.GetComponent<PlatformerPlayerController>().enabled = true;
+                Player.GetComponent<Animator>().enabled = true;
 
                 // Set booleans and activate real world objects
                 _shadowPerspective = false;

@@ -25,6 +25,9 @@ public class PlatformerPlayerController : PhysicsObject
     public float JumpTakeOffSpeed = 7f;
     public float MaxSpeed = 7f;
     public bool IsShadow;
+    public Sprite StandingSprite;
+
+    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +68,10 @@ public class PlatformerPlayerController : PhysicsObject
                 _facingRight = false;
             }
 
-            _animator.enabled = (move.x != 0);
+            if (!IsShadow)
+            {
+                _animator.SetFloat("Speed", Mathf.Abs(move.x));
+            }
         }
 
         else if (IsShadow)
@@ -87,6 +93,8 @@ public class PlatformerPlayerController : PhysicsObject
         if (Input.GetButtonDown("Jump") && grounded)
         {
             velocity.y = JumpTakeOffSpeed;
+            if(!IsShadow)
+                _animator.SetBool("Jump", true);
         }
         else if (Input.GetButtonUp("Jump"))
         {
@@ -94,6 +102,10 @@ public class PlatformerPlayerController : PhysicsObject
             {
                 velocity.y *= 0.5f;
             }
+        }
+        else if(grounded && _animator.GetBool("Jump") && !IsShadow)
+        {
+            _animator.SetBool("Jump", false);
         }
 
         targetVelocity = move * MaxSpeed;

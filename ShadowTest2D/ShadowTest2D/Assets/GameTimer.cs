@@ -32,7 +32,6 @@ public class GameTimer : MonoBehaviour
             {
                 deciseconds = 0;
                 seconds++;
-                Debug.Log(seconds);
                 if(seconds == 60)
                 {
                     minutes++;

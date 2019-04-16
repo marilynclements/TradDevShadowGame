@@ -14,7 +14,6 @@ public class UITimer : MonoBehaviour
     {
         PC = PerceptionController.Instance;
         maxVal = PC.MaxTime;
-        Debug.Log("MAX VAL: " + maxVal.ToString());
     }
 
     // Update is called once per frame
