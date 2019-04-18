@@ -15,7 +15,7 @@ public class PlatformerPlayerController : PhysicsObject
     private int animationHash = Animator.StringToHash("Moth_move");
     private bool _facingRight = true;
     private bool _test;
-    private MothDecalAnimator _MDA;
+    public MothDecalAnimator _MDA;
 
     public bool IsGrounded()
     {
@@ -45,7 +45,7 @@ public class PlatformerPlayerController : PhysicsObject
         Vector2 move = Vector2.zero;
 
         move.x = Input.GetAxis("Horizontal");
-        if (!_test)
+        if (!IsShadow)
         {
             if (move.x > 0)
             {
@@ -68,10 +68,10 @@ public class PlatformerPlayerController : PhysicsObject
                 _facingRight = false;
             }
 
-            if (!IsShadow)
+            /*if (!IsShadow)
             {
                 _animator.SetFloat("Speed", Mathf.Abs(move.x));
-            }
+            }*/
         }
 
         else if (IsShadow)
@@ -103,11 +103,14 @@ public class PlatformerPlayerController : PhysicsObject
                 velocity.y *= 0.5f;
             }
         }
-        else if(grounded && _animator.GetBool("Jump") && !IsShadow)
+        else if(grounded && !IsShadow && _animator.GetBool("Jump"))
         {
             _animator.SetBool("Jump", false);
         }
-
+        if(IsShadow)
+        {
+            Debug.Log(move);
+        }
         targetVelocity = move * MaxSpeed;
     }
 

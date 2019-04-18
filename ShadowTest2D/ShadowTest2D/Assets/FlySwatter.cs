@@ -5,15 +5,30 @@ using UnityEngine;
 
 public class FlySwatter : MonoBehaviour
 {
-    public GameObject Player;
-    public GameObject ShadowPlayer;
+    public Transform Player;
+    public Transform ShadowPlayer;
     public float WobbleSpeed;
     public float IdleSpeed;
     public int PauseTime;
+    public float FollowSpeed;
 
     private Animator _animator;
     private bool Lock;
     private bool Swing;
+    private bool Following;
+    private Transform Target;
+
+    public void ChangeTarget(bool toShadow)
+    {
+        if(toShadow)
+        {
+            Target = ShadowPlayer;
+        }
+        else
+        {
+            Target = Player;
+        }
+    }
 
     private void Start()
     {
@@ -22,9 +37,11 @@ public class FlySwatter : MonoBehaviour
         {
             _animator.speed = IdleSpeed;
         }
-        Lock = false;
+        Lock = true;
         Swing = false;
-        
+        Following = true;
+        Target = Player;
+        PerceptionController.Instance.ChangeToShadowEvent.AddListener(ChangeTarget);
     }
 
     private void Update()
@@ -39,18 +56,40 @@ public class FlySwatter : MonoBehaviour
             Swing = false;
             _animator.SetBool("Wobble", true);
         }
+        if(Following)
+        {
+            if(Mathf.Abs(Target.position.x - transform.parent.position.x) <= FollowSpeed)
+            {
+                Debug.Log("1");
+                transform.parent.position = new Vector3(Target.position.x, transform.parent.position.y, transform.parent.position.z);
+                Lock = false;
+            }
+            else if(Target.position.x < transform.parent.position.x)
+            {
+                Debug.Log("2");
+                transform.parent.position = new Vector3(transform.parent.position.x - FollowSpeed, transform.parent.position.y, transform.parent.position.z);
+            }
+            else
+            {
+                Debug.Log("3");
+                transform.parent.position = new Vector3(transform.parent.position.x + FollowSpeed, transform.parent.position.y, transform.parent.position.z);
+            }
+        }
     }
     
     private void DisableWobble()
     {
-        Debug.Log("DISABLE");
         _animator.SetBool("Wobble", false);
     }
 
     private void FinishSwing()
     {
-        Debug.Log("UNLOCK");
-        Lock = false;
+        Following = true;
+    }
+
+    private void StopFollowing()
+    {
+        Following = false;
     }
 
     private IEnumerator Countdown()
