@@ -17,6 +17,7 @@ public class FlySwatter : MonoBehaviour
     private bool Swing;
     private bool Following;
     private Transform Target;
+    private bool _IsActive;
 
     public void ChangeTarget(bool toShadow)
     {
@@ -28,6 +29,11 @@ public class FlySwatter : MonoBehaviour
         {
             Target = Player;
         }
+    }
+
+    public void changeActive(bool status)
+    {
+        _IsActive = status;
     }
 
     private void Start()
@@ -42,10 +48,15 @@ public class FlySwatter : MonoBehaviour
         Following = true;
         Target = Player;
         PerceptionController.Instance.ChangeToShadowEvent.AddListener(ChangeTarget);
+        _IsActive = false;
     }
 
     private void Update()
     {
+        if(!_IsActive)
+        {
+            return;
+        }
         if(!Lock)
         {
             Lock = true;
