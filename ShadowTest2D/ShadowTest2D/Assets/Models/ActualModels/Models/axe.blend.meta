@@ -3,6 +3,85 @@ guid: 7c37ed1e843c7a249a62ab1aecd78b20
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: Plane
+    100004: polySurface7_000
+    100006: polySurface7_001
+    100008: transform1
+    100010: transform10
+    100012: transform10_001
+    100014: transform11
+    100016: transform11_001
+    100018: transform12
+    100020: transform12_001
+    100022: transform13
+    100024: transform13_001
+    100026: transform14
+    100028: transform14_001
+    100030: transform1_001
+    100032: transform2
+    100034: transform2_001
+    100036: transform3
+    100038: transform3_001
+    100040: transform4
+    100042: transform4_001
+    100044: transform5
+    100046: transform5_001
+    100048: transform6
+    100050: transform6_001
+    100052: transform7
+    100054: transform7_001
+    100056: transform8
+    100058: transform8_001
+    100060: transform9
+    100062: transform9_001
+    400000: //RootNode
+    400002: Plane
+    400004: polySurface7_000
+    400006: polySurface7_001
+    400008: transform1
+    400010: transform10
+    400012: transform10_001
+    400014: transform11
+    400016: transform11_001
+    400018: transform12
+    400020: transform12_001
+    400022: transform13
+    400024: transform13_001
+    400026: transform14
+    400028: transform14_001
+    400030: transform1_001
+    400032: transform2
+    400034: transform2_001
+    400036: transform3
+    400038: transform3_001
+    400040: transform4
+    400042: transform4_001
+    400044: transform5
+    400046: transform5_001
+    400048: transform6
+    400050: transform6_001
+    400052: transform7
+    400054: transform7_001
+    400056: transform8
+    400058: transform8_001
+    400060: transform9
+    400062: transform9_001
+    2100000: axehead_001
+    2100002: lambert2_001
+    2100004: unnamed
+    2100006: Material_001
+    2300000: Plane
+    2300002: polySurface7_000
+    2300004: polySurface7_001
+    3300000: Plane
+    3300002: polySurface7_000
+    3300004: polySurface7_001
+    4300000: polySurface7_000
+    4300002: Plane
+    4300004: polySurface7_001
+    7400000: Default Take
+    9500000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -57,7 +136,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
