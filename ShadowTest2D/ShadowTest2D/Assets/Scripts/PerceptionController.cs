@@ -61,6 +61,13 @@ public class PerceptionController : MonoBehaviour
     private float _tickAmount;
     private Coroutine _coroutine;
 
+    private Transform Checkpoint;
+
+    public void SetCheckpoint(Transform chck)
+    {
+        Checkpoint = chck;
+    }
+
     // Makes the object a singleton
     private static PerceptionController _instance;
     public static PerceptionController Instance { get { return _instance; } }
