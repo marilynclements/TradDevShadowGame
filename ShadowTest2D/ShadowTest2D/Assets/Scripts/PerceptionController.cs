@@ -282,12 +282,10 @@ public class PerceptionController : MonoBehaviour
 
     private IEnumerator TickTime()
     {
-        Debug.Log("HERE");
         while(!_outOfTime)
         {
             yield return new WaitForSeconds(_tickAmount);
             _currentTime -= TickAmount;
-            Debug.Log(_currentTime);
 
             if (_currentTime <= 0f)
             {

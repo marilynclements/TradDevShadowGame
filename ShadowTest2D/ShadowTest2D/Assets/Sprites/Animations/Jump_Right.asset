@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79ce5c93cad551546a2ce26a8d759194, type: 3}
-  m_Name: Shadow_Run_R 2
+  m_Name: Jump_Right
   m_EditorClassIdentifier: 
-  FPS: 0
-  AnimationFrames: []
+  FPS: 1
+  AnimationFrames:
+  - {fileID: 21300060, guid: 7feedd0a91508c04fa5f16c6cbdcbbba, type: 3}
