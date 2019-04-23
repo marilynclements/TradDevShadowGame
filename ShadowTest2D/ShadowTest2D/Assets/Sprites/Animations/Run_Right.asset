@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ce5c93cad551546a2ce26a8d759194, type: 3}
+  m_Name: Run_Right
+  m_EditorClassIdentifier: 
+  FPS: 18
+  AnimationFrames:
+  - {fileID: 21300000, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}
+  - {fileID: 21300002, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}
+  - {fileID: 21300010, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}
+  - {fileID: 21300012, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}
+  - {fileID: 21300014, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}
+  - {fileID: 21300016, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}
+  - {fileID: 21300020, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}
+  - {fileID: 21300004, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}
+  - {fileID: 21300022, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}
+  - {fileID: 21300008, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}

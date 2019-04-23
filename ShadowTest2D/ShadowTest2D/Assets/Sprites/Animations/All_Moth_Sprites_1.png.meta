@@ -1,0 +1,1875 @@
+fileFormatVersion: 2
+guid: 1c7e56f55655d71469efcaa88a39a764
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: All_Moth_Sprites_1_0
+    21300002: All_Moth_Sprites_1_1
+    21300004: All_Moth_Sprites_1_7
+    21300006: All_Moth_Sprites_1_39
+    21300008: All_Moth_Sprites_1_9
+    21300010: All_Moth_Sprites_1_2
+    21300012: All_Moth_Sprites_1_3
+    21300014: All_Moth_Sprites_1_4
+    21300016: All_Moth_Sprites_1_5
+    21300018: All_Moth_Sprites_1_41
+    21300020: All_Moth_Sprites_1_6
+    21300022: All_Moth_Sprites_1_8
+    21300024: All_Moth_Sprites_1_70
+    21300026: All_Moth_Sprites_1_68
+    21300028: All_Moth_Sprites_1_14
+    21300030: All_Moth_Sprites_1_15
+    21300032: All_Moth_Sprites_1_16
+    21300034: All_Moth_Sprites_1_17
+    21300036: All_Moth_Sprites_1_18
+    21300038: All_Moth_Sprites_1_19
+    21300040: All_Moth_Sprites_1_10
+    21300042: All_Moth_Sprites_1_11
+    21300044: All_Moth_Sprites_1_14
+    21300046: All_Moth_Sprites_1_17
+    21300048: All_Moth_Sprites_1_24
+    21300050: All_Moth_Sprites_1_19
+    21300052: All_Moth_Sprites_1_12
+    21300054: All_Moth_Sprites_1_13
+    21300056: All_Moth_Sprites_1_15
+    21300058: All_Moth_Sprites_1_16
+    21300060: All_Moth_Sprites_1_18
+    21300062: All_Moth_Sprites_1_20
+    21300064: All_Moth_Sprites_1_21
+    21300066: All_Moth_Sprites_1_24
+    21300068: All_Moth_Sprites_1_27
+    21300070: All_Moth_Sprites_1_35
+    21300072: All_Moth_Sprites_1_29
+    21300074: All_Moth_Sprites_1_22
+    21300076: All_Moth_Sprites_1_23
+    21300078: All_Moth_Sprites_1_25
+    21300080: All_Moth_Sprites_1_26
+    21300082: All_Moth_Sprites_1_28
+    21300084: All_Moth_Sprites_1_42
+    21300086: All_Moth_Sprites_1_43
+    21300088: All_Moth_Sprites_1_30
+    21300090: All_Moth_Sprites_1_31
+    21300092: All_Moth_Sprites_1_32
+    21300094: All_Moth_Sprites_1_34
+    21300096: All_Moth_Sprites_1_33
+    21300098: All_Moth_Sprites_1_35
+    21300100: All_Moth_Sprites_1_36
+    21300102: All_Moth_Sprites_1_37
+    21300104: All_Moth_Sprites_1_38
+    21300106: All_Moth_Sprites_1_40
+    21300108: All_Moth_Sprites_1_42
+    21300110: All_Moth_Sprites_1_43
+    21300112: All_Moth_Sprites_1_44
+    21300114: All_Moth_Sprites_1_50
+    21300116: All_Moth_Sprites_1_58
+    21300118: All_Moth_Sprites_1_52
+    21300120: All_Moth_Sprites_1_45
+    21300122: All_Moth_Sprites_1_46
+    21300124: All_Moth_Sprites_1_47
+    21300126: All_Moth_Sprites_1_48
+    21300128: All_Moth_Sprites_1_49
+    21300130: All_Moth_Sprites_1_65
+    21300132: All_Moth_Sprites_1_51
+    21300134: All_Moth_Sprites_1_67
+    21300136: All_Moth_Sprites_1_68
+    21300138: All_Moth_Sprites_1_69
+    21300140: All_Moth_Sprites_1_70
+    21300142: All_Moth_Sprites_1_71
+    21300144: All_Moth_Sprites_1_72
+    21300146: All_Moth_Sprites_1_73
+    21300148: All_Moth_Sprites_1_74
+    21300150: All_Moth_Sprites_1_75
+    21300152: All_Moth_Sprites_1_76
+    21300154: All_Moth_Sprites_1_77
+    21300156: All_Moth_Sprites_1_78
+    21300158: All_Moth_Sprites_1_79
+    21300160: All_Moth_Sprites_1_80
+    21300162: All_Moth_Sprites_1_81
+    21300164: All_Moth_Sprites_1_53
+    21300166: All_Moth_Sprites_1_54
+    21300168: All_Moth_Sprites_1_57
+    21300170: All_Moth_Sprites_1_60
+    21300172: All_Moth_Sprites_1_86
+    21300174: All_Moth_Sprites_1_62
+    21300176: All_Moth_Sprites_1_55
+    21300178: All_Moth_Sprites_1_56
+    21300180: All_Moth_Sprites_1_58
+    21300182: All_Moth_Sprites_1_59
+    21300184: All_Moth_Sprites_1_61
+    21300186: All_Moth_Sprites_1_63
+    21300188: All_Moth_Sprites_1_64
+    21300190: All_Moth_Sprites_1_67
+    21300192: All_Moth_Sprites_1_96
+    21300194: All_Moth_Sprites_1_97
+    21300196: All_Moth_Sprites_1_72
+    21300198: All_Moth_Sprites_1_65
+    21300200: All_Moth_Sprites_1_1000
+    21300202: All_Moth_Sprites_1_101
+    21300204: All_Moth_Sprites_1_102
+    21300206: All_Moth_Sprites_1_1030
+    21300208: All_Moth_Sprites_1_104
+    21300210: All_Moth_Sprites_1_105
+    21300212: All_Moth_Sprites_1_106
+    21300214: All_Moth_Sprites_1_107
+    21300216: All_Moth_Sprites_1_108
+    21300218: All_Moth_Sprites_1_109
+    21300220: All_Moth_Sprites_1_110
+    21300222: All_Moth_Sprites_1_111
+    21300224: All_Moth_Sprites_1_112
+    21300226: All_Moth_Sprites_1_66
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 4332
+        width: 255
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8f6bd3755221c45bc90e58741589d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 4330
+        width: 186
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29b111cad729144aae8345d1bc32306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_7
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 4330
+        width: 167
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297b9a69cec39a74b987d0ff327f6081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_9
+      rect:
+        serializedVersion: 2
+        x: 3305
+        y: 4364
+        width: 188
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c103d4282f43b6f4cb4bd1f07a97967c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_2
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 4332
+        width: 166
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf87edb7fa13dff458a3f693d3745893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_3
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 4330
+        width: 214
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c196d424ee0d0e4badb534cbfe0cf45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_4
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 4369
+        width: 255
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580f7a284d2e0e345b9ad22ee98748fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_5
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 4330
+        width: 252
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050c3d5d4a15a484cb165f9c0a631870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_6
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 4330
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126d3d680b981c843856e56b0799be7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_8
+      rect:
+        serializedVersion: 2
+        x: 2966
+        y: 4332
+        width: 168
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed89f4e85d3bab4fb437ef800644599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 3976
+        width: 308
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd23fff6fc89a84ba13932d42a7ad10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_11
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 3976
+        width: 271
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86841dff9a2ff574e973cec1e8d51138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_14
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 4013
+        width: 288
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af457a52d9230449919324a1a615236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_17
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 3976
+        width: 262
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0b1408584f34946abce6a92577eaf6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_19
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 4005
+        width: 266
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49281b39b093ba94e94aa5a8d5782b42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_12
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 3970
+        width: 267
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91644e6c87f4464db0857e7793c2d50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_13
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 3976
+        width: 257
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182868f8e11c41548b4663c875676369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_15
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 3976
+        width: 317
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ff2a07efcee1d4b8666121f506e5bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_16
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 3976
+        width: 277
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a424261c955fe4e897c9086d892c93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_18
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 3976
+        width: 267
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b3d8a3da52ffb4eb76ba34f5a0f749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_20
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 3619
+        width: 308
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee432615fe3f60042b9e798fc43795e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_21
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 3619
+        width: 271
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf9145a7f010884c9815115d991f3dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_24
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 3657
+        width: 288
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7ee4037aba2c74ca4979d727083d4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_27
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 3619
+        width: 262
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee109b479414b2b4a8ff28c127a8b81b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_29
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 3649
+        width: 266
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd937646b02a56f4da787489ce389eaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_22
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 3619
+        width: 266
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019c88b2434ffde4286cb054f1153f9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_23
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 3619
+        width: 257
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31642a8d218dec846a30d99818f74e26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_25
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 3619
+        width: 317
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6c6c4c0afcfe140a1996a963792726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_26
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 3619
+        width: 277
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0c0390be4491b4388cb3a007b44631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_28
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 3619
+        width: 267
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f1c46f986ccc546a5c785cc18a268d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_30
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3295
+        width: 186
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e2ef81198298e4ea0a70fbb34a1997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_31
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 3295
+        width: 266
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b186628b7f4e53449b5ae64178dd755f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_32
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 3292
+        width: 269
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b5a5fe6c8f0cd4da8b6fce0ab2da28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_34
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 3285
+        width: 139
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e064b33cc94bf94a926bf9492ed3238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_33
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 3263
+        width: 142
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed6ea731337d5244acf399358437b02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_35
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 3263
+        width: 122
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a549adf86b7994bbb76c5a034c4dcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_36
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 3285
+        width: 122
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2996bb98c94f54a4d84f241c6839dd95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_37
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2909
+        width: 257
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1e544a2a9110b409dbf327dcf8cb68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_38
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2907
+        width: 256
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f202d10ccf7579b4d98003030d391925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_40
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2550
+        width: 256
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3297c08ce1c6ca84c82344c8882de503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_42
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 2194
+        width: 164
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9a1157745a434439af8a1cab5691bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_43
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1660
+        width: 255
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843c7b74e35f9914ba6a70eba03f77c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_44
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1669
+        width: 188
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce31b4173c8895945b6e0c2a6d662ab1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_50
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1669
+        width: 164
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3936d536b77e2a46b077ffc1d6aeaae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_52
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 1692
+        width: 185
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d028cf39b690fff4089a3a5408d0c409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_45
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1671
+        width: 225
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e23c390344d1134998da9a7ddc3dfbb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_46
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1669
+        width: 178
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44161782baab9fa4b9243133b2245d2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_47
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1708
+        width: 255
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c562b21062299614595f2e64fc580c40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_48
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 1669
+        width: 251
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d09e6f2dcd4b94a84befd2ba3be0da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_49
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 1669
+        width: 199
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8749f637aebe349458941f3a407db938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_51
+      rect:
+        serializedVersion: 2
+        x: 2924
+        y: 1671
+        width: 168
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d33759ada01a44f8d83e6e83b1f386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_53
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1315
+        width: 305
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef85677554dd7174db0f365b85d393c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_54
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1315
+        width: 271
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1247af9b7e0bf342a4cb88840461c87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_57
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1352
+        width: 288
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7e1248f328d684eaef74af98ad24c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_60
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 1315
+        width: 262
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53b19984f55b564e815ff2b435a3a8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_62
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 1344
+        width: 261
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4400056f0a4b2df4bb8b3e7dd982681b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_55
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1315
+        width: 266
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780fe779513eab745810ac1f8f88a6c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_56
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1329
+        width: 258
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3ca042a91fadc4196fb269cb121114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_58
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 1315
+        width: 318
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f0aad95c058414da452549196a9637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_59
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 1315
+        width: 278
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3e7b8c5568c45418abc56ef0a86192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_61
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 1315
+        width: 267
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f00215685e727c4fbfb5acabb6a8f8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_63
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 958
+        width: 305
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97721899f4a84d542b716e6a8c2689eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_64
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 958
+        width: 271
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd37e02c9cf73f46afefd3baba7beb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_67
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 997
+        width: 288
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3dde2acc090624f9a228f7d6215a41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_96
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 605
+        width: 262
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8f44de4fd77e24bbc4e36ad6599493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_72
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 989
+        width: 261
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70fa302f4e36354dbd5ca1dbbc55ef5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_65
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 958
+        width: 266
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8959e595006192844872bdfebf9c6bf5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_66
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 958
+        width: 258
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fcbd95834aed040b50723943e45591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_76
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 602
+        width: 254
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3389729924f7c1341ac2adfd87b25a2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_79
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 602
+        width: 320
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed2a07e6d524204db9219458ba88e00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_69
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 957
+        width: 278
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52393013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89999dc5771dbd244991530515af5509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_71
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 958
+        width: 267
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985584b756465a242a0fba45332194ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_73
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 634
+        width: 188
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af809b24abc2b64a90b6dcf35f936a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_74
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 634
+        width: 269
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fda7d180d4a5c147bbc750b49763743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_75
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 631
+        width: 266
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3806dde79231be249ba26b878e496148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_78
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 604
+        width: 254
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c76c6d38dc84942b66692ef7f7be35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_111
+      rect:
+        serializedVersion: 2
+        x: 2224
+        y: 604
+        width: 256
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e4d5918fab05044b7f7a2eee4fdf26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_112
+      rect:
+        serializedVersion: 2
+        x: 2937
+        y: 602
+        width: 164
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70be107af60a74748a36ba9d122cef1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_39
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2553
+        width: 268
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1cd383297c4f541b42983b67a0688d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_41
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2198
+        width: 204
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20aec26090af26140ad81f76ef19a5ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_70
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 958
+        width: 258
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4aef0fa218e76d4c855099402c5c35e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Moth_Sprites_1_68
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 962
+        width: 328
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72545371b4457ae4ab87ca501dd02aca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8b4dd9613ca43754d89758cd9c1a7669
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -61,6 +61,13 @@ public class PerceptionController : MonoBehaviour
     private float _tickAmount;
     private Coroutine _coroutine;
 
+    private Transform Checkpoint;
+
+    public void SetCheckpoint(Transform chck)
+    {
+        Checkpoint = chck;
+    }
+
     // Makes the object a singleton
     private static PerceptionController _instance;
     public static PerceptionController Instance { get { return _instance; } }
@@ -282,12 +289,10 @@ public class PerceptionController : MonoBehaviour
 
     private IEnumerator TickTime()
     {
-        Debug.Log("HERE");
         while(!_outOfTime)
         {
             yield return new WaitForSeconds(_tickAmount);
             _currentTime -= TickAmount;
-            Debug.Log(_currentTime);
 
             if (_currentTime <= 0f)
             {

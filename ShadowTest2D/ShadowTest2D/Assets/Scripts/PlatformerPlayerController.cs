@@ -67,26 +67,38 @@ public class PlatformerPlayerController : PhysicsObject
                 }
                 _facingRight = false;
             }
-
-            /*if (!IsShadow)
-            {
-                _animator.SetFloat("Speed", Mathf.Abs(move.x));
-            }*/
+            _animator.SetFloat("Speed", Mathf.Abs(move.x));
         }
 
         else if (IsShadow)
-        { 
-            if(_MDA == null)
+        {
+            if(move.x > 0)
             {
-                _MDA = GetComponentInChildren<MothDecalAnimator>();
+                _facingRight = true;
             }
-            if (move.x > 0)
+            else if (move.x < 0)
             {
-                _MDA.PlayRun();
+                _facingRight = false;
+            }
+
+            if (move.x == 0 && !Input.GetButtonDown("Jump"))
+            {
+                if (_MDA.getCurrent() != "Idle")
+                {
+                    Debug.Log("IDLING");
+                    _MDA.StopAll();
+                    _MDA.PlayIdle(_facingRight);
+                }
             }
             else
             {
-                _MDA.StopRun();
+                
+                if (_MDA.getCurrent() != "Run")
+                {
+                    Debug.Log("RUNNING");
+                    _MDA.StopAll();
+                    _MDA.PlayRun(_facingRight);
+                }
             }
         }
 
@@ -95,6 +107,15 @@ public class PlatformerPlayerController : PhysicsObject
             velocity.y = JumpTakeOffSpeed;
             if(!IsShadow)
                 _animator.SetBool("Jump", true);
+            else
+            {
+                if (_MDA.getCurrent() != "Jump")
+                {
+                    Debug.Log("JUMPING");
+                    _MDA.StopAll();
+                    _MDA.PlayJump(_facingRight);
+                }
+            }
         }
         else if (Input.GetButtonUp("Jump"))
         {
@@ -107,9 +128,32 @@ public class PlatformerPlayerController : PhysicsObject
         {
             _animator.SetBool("Jump", false);
         }
-        if(IsShadow)
+        else if(grounded && IsShadow)
         {
-            Debug.Log(move);
+            if (move.x > 0)
+            {
+                if (_MDA.getCurrent() != "Run")
+                {
+                    _MDA.StopAll();
+                    _MDA.PlayRun(true);
+                }
+            }
+            else if (move.x < 0)
+            {
+                if (_MDA.getCurrent() != "Run")
+                {
+                    _MDA.StopAll();
+                    _MDA.PlayRun(false);
+                }
+            }
+            else
+            {
+                if (_MDA.getCurrent() != "Idle")
+                {
+                    _MDA.StopAll();
+                    _MDA.PlayIdle(_facingRight);
+                }
+            }
         }
         targetVelocity = move * MaxSpeed;
     }

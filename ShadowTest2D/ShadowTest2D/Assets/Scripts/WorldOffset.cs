@@ -83,7 +83,6 @@ public class WorldOffset : MonoBehaviour
     {
         if (collision.tag == PlayerTag && _isActive)
         {
-            Debug.Log(transform.position);
             _controller.SetPlayerOffset(_offsetX, _offsetY);
         }
     }

@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79ce5c93cad551546a2ce26a8d759194, type: 3}
-  m_Name: Shadow_Run_R 1
+  m_Name: Idle_Right
   m_EditorClassIdentifier: 
-  FPS: 0
-  AnimationFrames: []
+  FPS: 1
+  AnimationFrames:
+  - {fileID: 21300018, guid: 1c7e56f55655d71469efcaa88a39a764, type: 3}
