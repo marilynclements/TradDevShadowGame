@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test_Level_Design.unity
     guid: 4853ceb5ac315c2499e1497d582446d0
+  - enabled: 1
+    path: Assets/Scenes/ScoreBoard.unity
+    guid: 4f5cda5026b15bd428db9c0787c1c24a
   m_configObjects: {}
