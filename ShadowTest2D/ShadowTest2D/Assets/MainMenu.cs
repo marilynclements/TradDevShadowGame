@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        PlayerPrefs.SetInt("StillPlay", 0);
         SceneManager.LoadScene(1);
     }
 

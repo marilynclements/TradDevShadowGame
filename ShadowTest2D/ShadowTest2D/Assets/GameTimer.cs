@@ -79,6 +79,7 @@ public class GameTimer : MonoBehaviour
                 if(seconds == 60)
                 {
                     minutes++;
+                    seconds = 0;
                 }
             }
 

@@ -12,7 +12,8 @@ public class Death : MonoBehaviour
     {
         if (collision.tag == PlayerTag)
         {
-            if (DontKillShadow && !collision.GetComponent<PlatformerPlayerController>().IsShadow)
+            
+            if (DontKillShadow && !collision.gameObject.GetComponent<PlatformerPlayerController>().IsShadow)
             {
                 GameTimer.instance.SaveIndividualTimes();
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
