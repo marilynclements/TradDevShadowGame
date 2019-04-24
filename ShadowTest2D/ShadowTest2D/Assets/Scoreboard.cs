@@ -41,6 +41,7 @@ public class Scoreboard : MonoBehaviour
                             {
                                 scores[i].text = temp;
                             }
+
                             break;
                         }
                         else if(a < b)
@@ -53,12 +54,13 @@ public class Scoreboard : MonoBehaviour
                     {
                         scores[i].text = temp;
                     }
+               
                 }
             }
         }
         else
         {
-            PlayerPrefs.SetInt("Score", 1);
+            PlayerPrefs.SetInt("Scores", 1);
             scores[0].text = PlayerPrefs.GetString("RecentTime");
         }
     }

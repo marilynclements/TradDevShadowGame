@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        PlayerPrefs.SetInt("StillPlay", 0);
+        PlayerPrefs.DeleteKey("StillPlay");
         SceneManager.LoadScene(1);
     }
 
