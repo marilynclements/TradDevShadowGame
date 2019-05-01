@@ -7,54 +7,93 @@ using UnityEngine.UI;
 public class Scoreboard : MonoBehaviour
 {
     public Text[] scores;
+    public bool DebugMode;
+    public string DebugLast;
+    public string[] DebugOld;
     // Start is called before the first frame update
     void Start()
     {
         if (PlayerPrefs.GetInt("Scores") == 1)
         {
-            string last = PlayerPrefs.GetString("RecentTime");
+            string current;
+            string recent;
+            if(DebugMode)
+            {
+                recent = DebugLast;
+            }
+            else
+            {
+                recent = PlayerPrefs.GetString("RecentTime");
+            }
+
+            bool CurrentReplaced = false;
+
             for (int i = 0; i < 5; i++)
             {
-                string temp = PlayerPrefs.GetString(i.ToString(), "NONE");
-                if(temp == "NONE")
+                if (CurrentReplaced)
                 {
-                    scores[i].text = last;
-                    break;
+                    if(DebugMode)
+                    {
+                        current = DebugOld[i - 1];
+                    }
+                    else
+                    {
+                        current = PlayerPrefs.GetString((i - 1).ToString(), "NONE");
+                    }
+
+                    if (current == "NONE")
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        scores[i].text = current;
+                        continue;
+                    }
+                }
+
+
+                if (DebugMode)
+                {
+                    current = DebugOld[i];
                 }
                 else
                 {
-                    bool replaced = false;
-                    string[] ScoreL = temp.Split(':');
-                    string[] LastL = last.Split(':');
-                    for (int j = 0; i < 3; i++)
-                    {
-                        int a;
-                        int b;
-                        int.TryParse(ScoreL[j], out a);
-                        int.TryParse(LastL[j], out b);
-                        if(a > b)
-                        {
-                            replaced = true;
-                            scores[i].text = last;
-                            i++;
-                            if (i < 5)
-                            {
-                                scores[i].text = temp;
-                            }
+                    current = PlayerPrefs.GetString(i.ToString(), "NONE");
+                }
 
-                            break;
-                        }
-                        else if(a < b)
-                        {
-                            scores[i].text = temp;
-                            break;
-                        }
-                    }
-                    if(!replaced)
+                if(current == "NONE")
+                {
+                    scores[i].text = recent;
+                    break;
+                }
+
+                string[] recent_array = recent.Split(':');
+                string[] current_array = current.Split(':');
+                bool same = true;
+                for (int j = 0; j < 3; j++)
+                {
+                    int rec;
+                    int cur;
+                    int.TryParse(recent_array[j], out rec);
+                    int.TryParse(current_array[j], out cur);
+                    if(rec < cur)
                     {
-                        scores[i].text = temp;
+                        scores[i].text = recent;
+                        CurrentReplaced = true;
+                        same = false;
+                        break;
                     }
-               
+                    else if(rec > cur)
+                    {
+                        scores[i].text = current;
+                        same = false;
+                        break;
+                    }
+                }
+                if(same)
+                {
+                    scores[i].text = current;
                 }
             }
         }
@@ -63,11 +102,32 @@ public class Scoreboard : MonoBehaviour
             PlayerPrefs.SetInt("Scores", 1);
             scores[0].text = PlayerPrefs.GetString("RecentTime");
         }
+
+        for (int i = 0; i < 5; i++)
+        {
+            if (scores[i].text == "N\\A")
+            {
+                break;
+            }
+            else
+            {
+                PlayerPrefs.SetString(i.ToString(), scores[i].text);
+            }
+        }
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void ResetBoard()
+    {
+        PlayerPrefs.DeleteAll();
+        for (int i = 0; i < scores.Length; i++)
+        {
+            scores[i].text = "N/A";
+        }
     }
 
     // Update is called once per frame
